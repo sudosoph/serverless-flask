@@ -37,6 +37,14 @@ functions:
     events:
       - http: ANY /
       - http: 'ANY {proxy+}'
+  getUser:
+    handler: wsgi_handler.handler
+    events:
+      - http: 'GET /users/{proxy+}'
+  createUser:
+    handler: wsgi_handler.handler
+    events:
+      - http: 'POST /users'
 
 resources:
   Resources:
