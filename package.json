@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sudosoph/serverless-flask#readme",
   "devDependencies": {
+    "serverless-dynamodb-local": "^0.2.39",
     "serverless-python-requirements": "^5.1.0",
     "serverless-wsgi": "^1.7.5"
   }
